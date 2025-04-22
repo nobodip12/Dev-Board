@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-blue-50 font-sans mx-auto px-14 py-4">
+    <!-- header -->
+    <div class="flex items-center justify-between bg-white mb-4 p-4 rounded-lg">
+      <div class="flex justify-center items-center gap-2">
+        <img class="w-8" src="./Dev-Board/assets/logo.png" alt="" />
+        <h1 class="text-2xl font-bold text-blue-300">
+          Dev<span class="text-blue-500">Board</span>
+        </h1>
+      </div>
+      <div class="flex items-center gap-8">
+        <div
+          class="flex items-center bg-gray-50 px-4 py-2 rounded-lg shadow text-blue-600 font-bold"
+        >
+          <input type="checkbox" checked class="mr-4" />23
+        </div>
+        <img class="w-8" src="./Dev-Board/assets/theme-btn.png" alt="" />
+      </div>
+    </div>
+    <!-- Discover new top section -->
+    <div class="flex items-center justify-between bg-white mb-4 p-4 w-3/4">
+      <div
+        class="bg-gray-50 shadow rounded-lg px-6 py-3 text-blue-600 font-semibold flex items-center gap-6"
+      >
+        <input type="checkbox" checked class="mr-2" />
+        <div>
+          <div><span class="text-gray-600">Task Assigned</span></div> 
+        <div><span class="text-xl font-bold text-gray-900">05</span></div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-blue-700 to-blue-300 text-white px-6 py-3 rounded-lg flex items-center font-bold shadow gap-4">
+        <div><img src="./Dev-Board/assets/board.png" alt=""></div>
+        <div class="text-xl">Discover Something <br> New Today!</div>
+      </div>
+      <div class="bg-white shadow rounded-lg px-6 py-3 flex items-center gap-6 font-semibold">
+        <!-- Calendar Icon -->
+        <div>
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <!-- Date Text -->
+        <div>Wed, <br> <span class="font-bold">Jul 28 2025</span></div>
+      </div>
+    </div>
+  </body>
+</html>
