@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-blue-50 font-sans mx-auto px-14 py-4">
+  <body class="bg-blue-50 font-sans px-14 py-4">
     <!-- header -->
     <div class="flex items-center justify-between bg-white mb-4 p-4 rounded-lg">
       <div class="flex justify-center items-center gap-2">
@@ -32,29 +32,172 @@
       </div>
     </div>
     <!-- Discover new top section -->
-    <div class="flex items-center justify-between bg-white mb-4 p-4 w-3/4">
-      <div
-        class="bg-gray-50 shadow rounded-lg px-6 py-3 text-blue-600 font-semibold flex items-center gap-6"
-      >
-        <input type="checkbox" checked class="mr-2" />
-        <div>
-          <div><span class="text-gray-600">Task Assigned</span></div> 
-        <div><span class="text-xl font-bold text-gray-900">05</span></div>
+    <div class="flex justify-center w-full">
+      <div class="bg-white mb-4 p-4 w-3/4">
+      <div class="flex items-center justify-around">
+        <div
+          class="bg-gray-50 shadow rounded-lg px-6 py-3 text-blue-600 font-semibold flex items-center gap-6"
+        >
+          <input type="checkbox" checked class="mr-2" />
+          <div>
+            <div><span class="text-gray-600">Task Assigned</span></div>
+            <div><span class="text-xl font-bold text-gray-900">05</span></div>
+          </div>
         </div>
-      </div>
-      <div class="bg-gradient-to-r from-blue-700 to-blue-300 text-white px-6 py-3 rounded-lg flex items-center font-bold shadow gap-4">
-        <div><img src="./Dev-Board/assets/board.png" alt=""></div>
-        <div class="text-xl">Discover Something <br> New Today!</div>
-      </div>
-      <div class="bg-white shadow rounded-lg px-6 py-3 flex items-center gap-6 font-semibold">
-        <!-- Calendar Icon -->
-        <div>
-          <i class="fa-solid fa-calendar-days"></i>
+        <div
+          class="bg-gradient-to-r from-blue-700 to-blue-300 text-white px-6 py-2 rounded-lg flex items-center font-bold shadow gap-4"
+        >
+          <div><img class="w-16" src="./Dev-Board/assets/board.png" alt="" /></div>
+          <div class="text-xl">
+            Discover Something <br />
+            New Today!
+          </div>
         </div>
+        <div class="bg-white shadow rounded-lg px-6 py-3 flex items-center gap-6 font-semibold">
+          <!-- Calendar Icon -->
+          <div>
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
 
-        <!-- Date Text -->
-        <div>Wed, <br> <span class="font-bold">Jul 28 2025</span></div>
+          <!-- Date Text -->
+          <div>
+            Wed, <br />
+            <span class="font-bold">Jul 28 2025</span>
+          </div>
+        </div>
+      </div>
+      <!-- Task Cards -->
+      <div class="grid grid-cols-3 gap-4 mt-6">
+        <!-- card 1 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">ShopEase</p>
+          <h3 class="font-semibold text-xl mt-4">Fix Mobile Button Issue</h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Debug using Chrome DevTools, check for overlappi...
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">CloudSync</p>
+          <h3 class="font-semibold text-xl mt-4">Add Dark Mode</h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Store the user's preference in localStorage, update CSS
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">SwiftPay</p>
+          <h3 class="font-semibold text-xl mt-4">Optimize Home page </h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Debug using Chrome DevTools, check for overlappi...
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">Meta</p>
+          <h3 class="font-semibold text-xl mt-4">Add new emoji 🤲</h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Debug using Chrome DevTools, check for overlappi...
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">Google LLC</p>
+          <h3 class="font-semibold text-xl mt-4">Integrate OpenAI API</h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Debug using Chrome DevTools, check for overlappi...
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">Glassdoar</p>
+          <h3 class="font-semibold text-xl mt-4">Improve Job searching</h3>
+          <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
+            Debug using Chrome DevTools, check for overlappi...
+          </p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <p class="text-xs text-gray-500 mt-2">
+                Deadline<br /><strong class="text-gray-700">21 March 2025</strong>
+              </p>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+<!-- Activity Log section -->
+     <div class="bg-white p-4 rounded-lg shadow h-full">
+      <div class=" mb-4">
+        <h2 class="font-bold text-gray-700">Activity Log</h2>
+        <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Clear History</button>
+      </div>
+     
+    </div>
+    
   </body>
 </html>
