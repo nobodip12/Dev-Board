@@ -1,9 +1,13 @@
-// color btn 
+// color btn
 const colorBtn = document.getElementById('colorBtn');
 const colors = ['lightblue', 'lightgreen', 'lightcoral', 'yellowgreen', 'purple'];
- let color = 0;
- colorBtn.addEventListener('click', function(){
+let color = 0;
+colorBtn.addEventListener('click', function () {
   document.body.style.backgroundColor = colors[color];
   color = (color + 1) % colors.length;
-  
- })
+});
+
+//  discoverClick part
+document.getElementById('discoverClick').addEventListener('click', function () {
+  window.location.href = './discover.html';
+});
