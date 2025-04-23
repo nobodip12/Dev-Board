@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover new section</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-blue-50 font-sans px-14 py-4">
+    <!-- header part -->
+    <div class="flex items-center justify-between bg-white mb-4 p-4 rounded-lg">
+      <div class="flex justify-center items-center gap-2">
+        <h1 class="text-2xl font-bold text-blue-300">
+          Dev<span class="text-blue-500">Board</span>
+        </h1>
+      </div>
+      <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Back to Back</button>
+    </div>
+    <!-- Questions and answer -->
+    <h1 class="text-2xl font-bold text-gray-600 text-center">Blogs</h1>
+    <!-- Question 1 -->
+    <div class="bg-white rounded-xl p-4 mt-4">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Question-1: What are the different ways to select an element in the DOM?
+      </h1>
+      <span class="text-gray-100 font-semibold"><hr /></span>
+      <p class="text-xl font-semibold text-gray-500 mt-4">
+        The ways to select elements in the dom are getElementById, getElementsByClassName,
+        getElementsByTagName, querySelector, querySelectorAll
+      </p>
+    </div>
+    <!-- Question 2 -->
+    <div class="bg-white rounded-xl p-4 mt-4">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+      </h1>
+      <span class="text-gray-100 font-semibold"><hr /></span>
+      <p class="text-xl font-semibold text-gray-500 mt-4">
+        The differences between innerHTML and innerText are that innerHtml gets the full HTML code
+        and returns everything including HTML tags .while innerText only gets text and does not
+        return any HTML tags.
+      </p>
+    </div>
+    <!-- Question 3 -->
+    <div class="bg-white rounded-xl p-4 mt-4">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Question-3: What is event delegation in the DOM?
+      </h1>
+      <span class="text-gray-100 font-semibold"><hr /></span>
+      <p class="text-xl font-semibold text-gray-500 mt-4">
+        Event Delegation is a simple technique where an event listener is placed on a parent element
+        to capture events that occur on its child elements. Event Delegation is especially used to
+        keep the code short and clean.
+      </p>
+    </div>
+    <!-- Question 4 -->
+    <div class="bg-white rounded-xl p-4 mt-4">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Question-4: What is event bubbling in the DOM?
+      </h1>
+      <span class="text-gray-100 font-semibold"><hr /></span>
+      <p class="text-xl font-semibold text-gray-500 mt-4">
+        When you click on a child element, the event that is generated is not limited to the child
+        element but also bubbles up on the parent, grandparent, etc.
+      </p>
+    </div>
+    <!-- Question 5 -->
+    <div class="bg-white rounded-xl p-4 mt-4">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Question-5: How do you create, add, and remove elements using JavaScript?
+      </h1>
+      <span class="text-gray-100 font-semibold"><hr /></span>
+      <p class="text-xl font-semibold text-gray-500 mt-4">
+        Using javascript, add the DOM through createElement and push the code to the id using
+        appendChild. You can do this by using the remove tag with the id you want to remove.
+      </p>
+    </div>
+  </body>
+</html>

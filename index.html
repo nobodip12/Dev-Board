@@ -31,10 +31,10 @@
         <img class="w-8" src="./Dev-Board/assets/theme-btn.png" alt="" />
       </div>
     </div>
-    <!-- Discover new top section -->
-    <div class="flex justify-center w-full">
-      <div class="bg-white mb-4 p-4 w-3/4">
-      <div class="flex items-center justify-around">
+    <div class="flex justify-between  w-full gap-6">
+      <!-- Discover new section -->
+      <div class="bg-white mb-4 p-4 w-[75%] rounded-xl">
+      <div class="flex items-center justify-between">
         <div
           class="bg-gray-50 shadow rounded-lg px-6 py-3 text-blue-600 font-semibold flex items-center gap-6"
         >
@@ -48,7 +48,8 @@
           class="bg-gradient-to-r from-blue-700 to-blue-300 text-white px-6 py-2 rounded-lg flex items-center font-bold shadow gap-4"
         >
           <div><img class="w-16" src="./Dev-Board/assets/board.png" alt="" /></div>
-          <div class="text-xl">
+          <div onclick="window.location.href='./'" class="text-xl">
+            
             Discover Something <br />
             New Today!
           </div>
@@ -191,9 +192,17 @@
       </div>
     </div>
 <!-- Activity Log section -->
-     <div class="bg-white p-4 rounded-lg shadow h-full">
-      <div class=" mb-4">
-        <h2 class="font-bold text-gray-700">Activity Log</h2>
+     <div class="bg-white p-4 rounded-lg shadow w-[30%] h-[106vh] ">
+      <div class="text-center">
+        <div class="flex justify-center items-center gap-2">
+          <div>
+            <img class="w-5" src="./Dev-Board/assets/activity.png" alt="">
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-gray-500 mb-2">Activity Log</h2>
+          </div>
+        </div>
+       
         <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Clear History</button>
       </div>
      
