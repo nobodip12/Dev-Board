@@ -12,7 +12,7 @@ document.getElementById('discoverClick').addEventListener('click', function () {
   window.location.href = './discover.html';
 });
 
-// completed btn
+// completed 6 btn
 let taskCount = 6;
 let completedCount = 23;
 
@@ -55,4 +55,8 @@ document.querySelectorAll('.complete-btn').forEach(function (button, index, butt
   });
 });
 
+// Clear History
+document.getElementById('clearHistory').addEventListener('click', function () {
+  logContainer.innerHTML = '';
+});
 
