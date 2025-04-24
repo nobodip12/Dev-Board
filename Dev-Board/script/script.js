@@ -12,6 +12,16 @@ document.getElementById('discoverClick').addEventListener('click', function () {
   window.location.href = './discover.html';
 });
 
+//live date and time
+function updateTime() {
+  const now = new Date();
+  const formatted = now.toLocaleString();
+  document.getElementById('staticDate').textContent = formatted;
+}
+updateTime();
+
+setInterval(updateTime, 1000);
+
 // completed 6 btn
 let taskCount = 6;
 let completedCount = 23;
