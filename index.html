@@ -26,7 +26,7 @@
         <div
           class="flex items-center bg-gray-50 px-4 py-2 rounded-lg shadow text-blue-600 font-bold"
         >
-          <input type="checkbox" checked class="mr-4" />23
+          <input type="checkbox" checked class="mr-4" /><span id="completedCount">23</span>
         </div>
         <img id="colorBtn" class="w-8" src="./Dev-Board/assets/theme-btn.png" alt="" />
       </div>
@@ -39,9 +39,9 @@
           class="bg-gray-50 shadow rounded-lg px-6 py-3 text-blue-600 font-semibold flex items-center gap-6"
         >
           <input type="checkbox" checked class="mr-2" />
-          <div>
+          <div id="taskAssigned">
             <div><span class="text-gray-600">Task Assigned</span></div>
-            <div><span class="text-xl font-bold text-gray-900">05</span></div>
+            <div><span id="taskCount" class="text-xl font-bold text-gray-900">06</span></div>
           </div>
         </div>
         <div id="discoverClick"
@@ -54,14 +54,14 @@
             New Today!
           </div>
         </div>
-        <div class="bg-white shadow rounded-lg px-6 py-3 flex items-center gap-6 font-semibold">
+        <div class="bg-white shadow rounded-lg px-6 py-3 flex items-center gap-6 font-semibold dateCard">
           <!-- Calendar Icon -->
           <div>
             <i class="fa-solid fa-calendar-days"></i>
           </div>
 
           <!-- Date Text -->
-          <div>
+          <div id="staticDate">
             Wed, <br />
             <span class="font-bold">Jul 28 2025</span>
           </div>
@@ -70,7 +70,7 @@
       <!-- Task Cards -->
       <div class="grid grid-cols-3 gap-4 mt-6">
         <!-- card 1 -->
-        <div class="bg-gray-50 p-4 rounded-lg shadow">
+        <div class="bg-gray-50 p-4 rounded-lg shadow card">
           <p class="text-gray-600 bg-white w-fit p-2 rounded-xl ml-2">ShopEase</p>
           <h3 class="font-semibold text-xl mt-4">Fix Mobile Button Issue</h3>
           <p class="bg-white text-gray-400 rounded-xl mt-4 p-2">
@@ -83,7 +83,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Fix Mobile Button Issue">
                 Completed
               </button>
             </div>
@@ -103,7 +103,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Add Dark Mode">
                 Completed
               </button>
             </div>
@@ -123,7 +123,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Optimize Home page ">
                 Completed
               </button>
             </div>
@@ -143,7 +143,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Add new emoji 🤲">
                 Completed
               </button>
             </div>
@@ -163,7 +163,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Integrate OpenAI API">
                 Completed
               </button>
             </div>
@@ -183,7 +183,7 @@
               </p>
             </div>
             <div>
-              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm">
+              <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 text-sm complete-btn" data-task="Improve Job searching">
                 Completed
               </button>
             </div>
@@ -192,7 +192,7 @@
       </div>
     </div>
 <!-- Activity Log section -->
-     <div class="bg-white p-4 rounded-lg shadow w-[30%] h-[106vh] ">
+     <div class="bg-white p-4 rounded-lg shadow w-[30%] h-[106vh] activity-log">
       <div class="text-center">
         <div class="flex justify-center items-center gap-2">
           <div>
@@ -203,7 +203,10 @@
           </div>
         </div>
        
-        <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Clear History</button>
+        <button id="clearHistory" class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Clear History</button>
+      </div>
+      <div id="logContainer">
+
       </div>
      
     </div>
