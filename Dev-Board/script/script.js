@@ -1,11 +1,11 @@
 // color btn
-const colorBtn = document.getElementById('colorBtn');
-const colors = ['lightblue', 'lightgreen', 'lightcoral', 'yellowgreen', 'purple'];
 let color = 0;
-colorBtn.addEventListener('click', function () {
+const colors = ['lightblue', 'lightgreen', 'lightcoral', 'yellowgreen', 'purple'];
+const colorBtn = document.getElementById('colorBtn').addEventListener('click', function () {
   document.body.style.backgroundColor = colors[color];
   color = (color + 1) % colors.length;
-});
+});;
+
 
 //  discoverClick part
 document.getElementById('discoverClick').addEventListener('click', function () {
@@ -13,14 +13,14 @@ document.getElementById('discoverClick').addEventListener('click', function () {
 });
 
 //live date and time
-function updateTime() {
+function updateTimes() {
   const now = new Date();
   const formatted = now.toLocaleString();
   document.getElementById('staticDate').textContent = formatted;
 }
-updateTime();
+updateTimes();
 
-setInterval(updateTime, 1000);
+setInterval(updateTimes, 1000);
 
 // completed 6 btn
 let taskCount = 6;
@@ -30,13 +30,13 @@ const taskCountEl = document.getElementById('taskCount');
 const completedCountEl = document.getElementById('completedCount');
 const logContainer = document.getElementById('logContainer');
 
-document.querySelectorAll('.complete-btn').forEach(function (button, index, buttons) {
+document.querySelectorAll('.complete-btn').forEach(function (button, click, buttons) {
   button.addEventListener('click', function () {
     const taskName = button.getAttribute('data-task');
 
     if (confirm('Board updated successfully')) {
-      if (index === buttons.length - 1) {
-        alert('Congrats!!! You have completed all the current tasks');
+      if (click === buttons.length - 1) {
+        alert('Congrats!!! You Have completed All the current tasks');
       }
       //Update count
       taskCount = Math.max(0, taskCount - 1);
@@ -50,10 +50,10 @@ document.querySelectorAll('.complete-btn').forEach(function (button, index, butt
       const now = new Date().toLocaleTimeString();
       log.textContent = `You have completed the task "${taskName}" at ${now}`;
       log.style.backgroundColor = '#eff6ff';
-      log.style.padding = '10px';
       log.style.marginTop = '8px';
+      log.style.padding = '12px';
+      log.style.fontSize = '12px';
       log.style.borderRadius = '8px';
-      log.style.fontSize = '14px';
 
       logContainer.appendChild(log);
 
